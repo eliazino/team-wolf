@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kamran.hackathon.report"
+    android:background="@drawable/mapa">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/timg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cashierName"
+            android:text="Trade Store" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <Spinner
+                android:id="@+id/productId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Product"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+           <!-- <EditText
+                android:id="@+id/productId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:textColorHint="#ADCCE2"
+                android:textColor="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#ADCCE2" />
+            <EditText
+                android:id="@+id/productCount"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Count"
+                android:textColorHint="#ADCCE2"
+                android:layout_marginLeft="22dp"
+                android:inputType="number"
+                android:textColor="#ADCCE2"
+                android:maxLength="12"
+                android:background="#0000"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ADCCE2"/>
+            <customfonts.MyTextView
+                android:id="@+id/addStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/angle"
+                android:text="Add Stock"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="32dp"
+                />
+        </LinearLayout>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/md_blue_200"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Pay"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/large_font"
+                android:textStyle="bold"/>
+        </RelativeLayout>-->
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
